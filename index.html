@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="mih1">Hola Mundo</h1> 
+    <div id="miid1">miid1</div>
+    <div id="miid">javascript</div>
+
+    <script>
+
+        // cambio de title
+        console.log(document.head.children);
+        document.head.children[2].innerHTML = "otro dom";
+        // alert("hola mundo");
+        console.log(document.body.children[1].innerHTML);
+        console.log(document.body.children[1].id);
+        //alert("voy a cambiar el div");
+        
+        document.getElementById("miid").innerHTML = "<h3>modificado</h3>";
+        document.body.children[1].innerHTML = "<h2>adios</h2>";
+        //  document.body.children
+        document.getElementById("miid").onclick = function(){
+            document.getElementById("mih1").innerHTML = "<h3>me has tocado</h3>";
+        };
+    </script>
+</body>
+</html>
