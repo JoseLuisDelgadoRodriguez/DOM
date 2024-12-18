@@ -23,10 +23,21 @@
         document.getElementById("miid").innerHTML = "<h3>modificado</h3>";
         document.body.children[1].innerHTML = "<h2>adios</h2>";
         //  document.body.children
+        console.log("backgroundcolor:"); 
+        let objetCSS = getComputedStyle(document.getElementById("miid"));
+        
+        console.log(objetCSS.getPropertyValue("background-color"));
+        console.log(objetCSS.getPropertyValue("miid").style);
+
         document.getElementById("miid").onclick = function(){
-            document.getElementById("mih1").innerHTML = "<h3>me has tocado el Git</h3>";
-             document.getElementById("mih1").style.backgroundColor = "green"
-        };
+            document.getElementById("miid").innerHTML = "<h3>me has tocado el Git</h3>";
+            document.getElementById("miid").style.backgroundColor = "green"
+            document.getElementById("miid").style.color = "white";
+
+            console.log("backgroundcolor:"); 
+            console.log(objetCSS.getPropertyValue("mibackground-color"));    
+            console.log(document.getElementById("miid").style);
+        }
         let misdiv1 = document.getElementsByTagName("div");
         let misdiv2 = document.querySelectorAll("div");
         console.log(misdiv1.length);
