@@ -25,7 +25,22 @@
         //  document.body.children
         document.getElementById("miid").onclick = function(){
             document.getElementById("mih1").innerHTML = "<h3>me has tocado el Git</h3>";
+             document.getElementById("mih1").style.backgroundColor = "green"
         };
+        let misdiv1 = document.getElementsByTagName("div");
+        let misdiv2 = document.querySelectorAll("div");
+        console.log(misdiv1.length);
+        console.log(misdiv2.length);
+    </script>
+
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+
+    <script>
+       console.log(misdiv1.length);
+       console.log(misdiv2.length);
+       misdiv2 = document.querySelectorAll("div");
+       console.log(misdiv2.length);
     </script>
 </body>
 </html>
