@@ -1,4 +1,4 @@
-function miclick(evento) {
+function miclick(event) {
   event.target.style.color = "white";
   console.log(event.target.id);
   document.getElementById(evento.target.id).style.backgroundColor = "red";
@@ -10,7 +10,7 @@ function miclick(evento) {
     document.getElementById(evento.target.id).style.backgroundColor = "blue";
   }
 }
-function nogoogle(evento) {
+function nogoogle(event) {
   // event.preventDefault();
   alert("vas a ir a Google en otra pestaña");
 }
